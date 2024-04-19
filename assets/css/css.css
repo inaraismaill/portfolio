@@ -6,7 +6,7 @@
     list-style: none;
     border: none;
     font-family: 'Clash Display', sans-serif;
-    /* border: red solid 1px; */
+    border: red solid 1px;
 }
 
 body {
@@ -42,9 +42,9 @@ header {
         font-size: 2rem;
     }
 
-    .logo {
-        width: 7rem;
-        height: 7rem;
+    img{
+        width: 9rem;
+        height: 9rem;
         object-fit: cover;
     }
 
@@ -187,7 +187,8 @@ footer {
 
 @media screen and (max-width:780px) {
     .nav-toogle {
-        display: block !important;
+        justify-content: end;
+        display: flex !important;
     }
 
     header .nav-menu {
@@ -232,7 +233,10 @@ footer {
     html {
         font-size: 50%;
     }
-
+    .home {
+        padding-top: 5rem;
+        height: 50vh;
+    }
     .home h1 {
         font-size: 5rem;
     }

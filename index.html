@@ -20,8 +20,7 @@
                     <img class="rounded-circle" src="assets/img/logo.png" alt="">
                 </div>
                 <div class="col-md-7 col-6">
-                    <div id="nav-menu" class="nav-menu d-flex  text-end justify-content-between h-100"
-                        id="nav--menu">
+                    <div id="nav-menu" class="nav-menu d-flex  text-end justify-content-between h-100" id="nav--menu">
                         <div class="h-100 w-100 navbar d-flex justify-content-between">
                             <a href="#home">Home</a>
                             <a href="#about">About</a>
@@ -42,7 +41,7 @@
                 <div class="text-center">
                     <h1>INARA ISMAIL</h1>
                     <h5>Software Developer & Front End Developer</h5>
-                    <a class="resume" href="assets/InaraIsmail.pdf" class="resume" download=""> Resume <i
+                    <a class="resume" href="assets/InaraIsmail.pdf" download=""> Resume <i
                             class="fa-solid fa-download"></i></a>
                 </div>
             </div>
@@ -129,21 +128,23 @@
             <form class="bottom d-flex justify-content-between flex-wrap">
                 <div class="name col-md-5 col-12">
                     <label>Full Name</label> <br>
-                    <input type="text" name="fname" placeholder="Enter Full Name">
+                    <input type="text" id="name" name="fname" placeholder="Enter Full Name">
                     <span></span>
                 </div>
                 <div class="mail col-md-6 col-12">
                     <label>Mail</label> <br>
-                    <input type="email" placeholder="Enter Mail" action="mailto:inaraisamyil@gmail.com" name="Mail">
+                    <input type="email" id="email" placeholder="Enter Mail" 
+                        name="Mail">
                     <span></span>
                 </div>
                 <div class="message col-md-8 col-12">
                     <label>Message</label> <br>
-                    <input type="text" placeholder="Don’t Be Shy, Write A Sweet Message And Send It Now" name="Mail">
+                    <input type="text" id="message" placeholder="Don’t Be Shy, Write A Sweet Message And Send It Now"
+                        name="Mail">
                     <span></span>
                 </div>
                 <div class="button d-flex col-md-3 col-12 justify-content-center align-items-center">
-                    <button type="submit">Submit</button>
+                    <button type="submit" id="submitBtn">Submit</button>
                 </div>
             </form>
 
@@ -155,16 +156,16 @@
                 <h2>Stay tuned for the latest design trends and development insights! Follow Me </h2>
             </div>
             <div class="d-flex justify-content-around col-md-3 col-sm-12">
-                <a href="https://www.linkedin.com/in/inara-ismayilova-216b86269 "><i
-                        class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/inaraismaill"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/inaraismayl/?igsh=eDZjajlzMGtxNTI3"><i
-                        class="fa-brands fa-instagram"></i></a>
+                <div class="icon"><a href="https://www.linkedin.com/in/inara-ismayilova-216b86269 "><i class="fa-brands fa-linkedin-in"></i></a></div>
+                <div class="icon"><a href="https://github.com/inaraismaill"><i class="fa-brands fa-github"></i></a></div>
+                <div class="icon"><a href="https://www.instagram.com/inaraismayl/?igsh=eDZjajlzMGtxNTI3"><i class="fa-brands fa-instagram"></i></a></div>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
     <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>

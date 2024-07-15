@@ -10,6 +10,16 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "e7o9lKvXcEiiie95s",
+            });
+        })();
+    </script>
 </head>
 
 <body>
@@ -41,7 +51,7 @@
                 <div class="text-center">
                     <h1>INARA ISMAIL</h1>
                     <h5>Software Developer & Front End Developer</h5>
-                    <a class="resume" href="assets/InaraIsmail.pdf" download=""> Resume <i
+                    <a class="resume" href="assets/inaraismail.pdf" download=""> Resume <i
                             class="fa-solid fa-download"></i></a>
                 </div>
             </div>
@@ -50,27 +60,15 @@
             <div class="row justify-content-between align-items-center">
                 <img class="col-md-3 col-sm-12 col-12" src="assets/img/memoji.png" alt="">
                 <div class="col-md-9 col-sm-12 col-12">
-                    <p>"Hello! I'm Inara Ismayilova, and I'm delighted to meet you. Thank you for dedicating this space
-                        for
-                        me to share my online portfolio.
+                    <p>"Hi! I'm Inara, a junior front-end developer with a passion for creating user-friendly web
+                        applications. Skilled in HTML, CSS, JavaScript, and React, I love building responsive and
+                        interactive websites. I’m also familiar with TypeScript and Redux for efficient state
+                        management.
 
-                        I'm 20 years old and I'm a 4th-year student in Azerbaijan. I have experience in the IT field at
-                        Azintelecom and have volunteered in various places. I have a strong interest in the front end
-                        and I
-                        work hard to develop myself in this area. I'm pleased to use technologies such as JavaScript,
-                        Bootstrap, CSS, HTML, and C#. Additionally, I'm proficient in using GitHub to manage my projects
-                        and
-                        to engage with other users.
+                        I'm always learning and staying updated with the latest web development trends. When I'm not
+                        coding, I enjoy reading tech blogs and experimenting with new technologies.
 
-                        A portfolio is a platform to showcase my work experience, projects, and technical skills. Here,
-                        you
-                        can both see my work and connect with me. As an indicator of how passionate I am about each
-                        project,
-                        I aim to develop myself into a first-class front end developer.
-
-                        If you'd like to get in touch, have job offers, or any questions, feel free to reach out
-                        anytime. I
-                        look forward to working with you!"</p>
+                        Check out my projects and feel free to reach out!"</p>
                 </div>
             </div>
         </section>
@@ -81,42 +79,31 @@
             <div class="bottom">
                 <div class="row justify-content-around">
                     <div class="cards p-5 col-12">
-                        <a href="https://github.com/inaraismaill/outstock"> <img class="w-100 p-2"
-                                src="assets/img/outstock.jpg" alt=""></a>
+                        <a href="https://netflix-lime-tau.vercel.app/"><img class="w-100 p-2"
+                                src="assets/img/netflix.jpg" alt=""></a>
+                        <div class=" text">
+                            <h2>Netflix</h2>
+                        </div>
+                    </div>
+                    <div class="cards p-5 col-12">
+                        <a href="https://weather-react-ts-eight.vercel.app/"> <img class="w-100 p-2"
+                                src="assets/img/weather.jpg" alt=""></a>
                         <div class="text">
-                            <h2>Outstock</h2>
-                            <p>"This project is developed using JavaScript for a frontend quiz application. Users can
-                                answer
-                                questions on different topics and see their results. The code includes various functions
-                                to
-                                manage dynamic URL routing, responsive interface for theme changes, and handle user
-                                interactions."</p>
+                            <h2>Weather</h2>
                         </div>
                     </div>
                     <div class="cards p-5 col-12">
-                        <a href="https://github.com/inaraismaill/motex"><img class="w-100 p-2"
-                                src="assets/img/motex.jpg" alt=""></a>
+                        <a href="https://prosparksiteii.netlify.app/"><img class="w-100 p-2"
+                                src="assets/img/prospark.jpg" alt=""></a>
                         <div class=" text">
-                            <h2>Motex</h2>
-                            <p>"This project is developed using JavaScript for a frontend quiz application. Users can
-                                answer
-                                questions on different topics and see their results. The code includes various functions
-                                to
-                                manage dynamic URL routing, responsive interface for theme changes, and handle user
-                                interactions."</p>
+                            <h2>Prospark</h2>
                         </div>
                     </div>
                     <div class="cards p-5 col-12">
-                        <a href="https://github.com/inaraismaill/recruit"><img class="w-100 p-2"
-                                src="assets/img/recruit.jpg" alt=""></a>
+                        <a href="https://quizzii.netlify.app/"><img class="w-100 p-2" src="assets/img/quiz.jpg"
+                                alt=""></a>
                         <div class=" text">
-                            <h2>Recruit</h2>
-                            <p>"This project is developed using JavaScript for a frontend quiz application. Users can
-                                answer
-                                questions on different topics and see their results. The code includes various functions
-                                to
-                                manage dynamic URL routing, responsive interface for theme changes, and handle user
-                                interactions."</p>
+                            <h2>Quiz App</h2>
                         </div>
                     </div>
                 </div>
@@ -133,8 +120,7 @@
                 </div>
                 <div class="mail col-md-6 col-12">
                     <label>Mail</label> <br>
-                    <input type="email" id="email" placeholder="Enter Mail" 
-                        name="Mail">
+                    <input type="email" id="email" placeholder="Enter Mail" name="Mail">
                     <span></span>
                 </div>
                 <div class="message col-md-8 col-12">
@@ -144,7 +130,7 @@
                     <span></span>
                 </div>
                 <div class="button d-flex col-md-3 col-12 justify-content-center align-items-center">
-                    <button type="submit" id="submitBtn">Submit</button>
+                    <button onclick="sendMail(event)" type="submit" id="submitBtn">Submit</button>
                 </div>
             </form>
 
@@ -156,14 +142,16 @@
                 <h2>Stay tuned for the latest design trends and development insights! Follow Me </h2>
             </div>
             <div class="d-flex justify-content-around col-md-3 col-sm-12">
-                <div class="icon"><a href="https://www.linkedin.com/in/inara-ismayilova-216b86269 "><i class="fa-brands fa-linkedin-in"></i></a></div>
-                <div class="icon"><a href="https://github.com/inaraismaill"><i class="fa-brands fa-github"></i></a></div>
-                <div class="icon"><a href="https://www.instagram.com/inaraismayl/?igsh=eDZjajlzMGtxNTI3"><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="icon"><a href="https://www.linkedin.com/in/inara-ismayilova-216b86269 "><i
+                            class="fa-brands fa-linkedin-in"></i></a></div>
+                <div class="icon"><a href="https://github.com/inaraismaill"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="icon"><a href="https://www.instagram.com/inaraismayl/?igsh=eDZjajlzMGtxNTI3"><i
+                            class="fa-brands fa-instagram"></i></a></div>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
     <script src="assets/js/script.js"></script>
 
 </body>
